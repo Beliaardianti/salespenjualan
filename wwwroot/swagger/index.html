@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <title>Sales API - Swagger</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.17.14/swagger-ui.css" />
+</head>
+<body>
+  <div id="swagger-ui"></div>
+  <!-- Swagger UI dari CDN, membaca dokumen OpenAPI yang dibuat otomatis oleh ASP.NET Core -->
+  <script src="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.17.14/swagger-ui-bundle.js"></script>
+  <script>
+    SwaggerUIBundle({
+      url: '/openapi/v1.json',
+      dom_id: '#swagger-ui',
+      persistAuthorization: true, // token tidak hilang saat halaman di-refresh
+    })
+  </script>
+</body>
+</html>
